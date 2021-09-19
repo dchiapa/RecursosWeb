@@ -1,0 +1,30 @@
+.switch__input {
+  display: none;
+  &:checked + .slider {
+    background-color: #111;
+    padding-left: 30px;
+  }
+  &:checked + .slider:before {
+    background-color: #ccc;
+  }
+}
+.slider {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 60px;
+  height: 34px;
+  padding: 4px;
+  background-color: #ccc;
+  transition: all 0.4s;
+  &::before {
+    content: "";
+    display: block;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background-color: #111;
+  }
+}

@@ -1,0 +1,41 @@
+.switch__input {
+  display: none;
+}
+
+.switch__input:checked + .slider {
+  background-color: #111;
+  padding-left: 30px;
+}
+
+.switch__input:checked + .slider:before {
+  background-color: #ccc;
+}
+
+.slider {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 60px;
+  height: 34px;
+  padding: 4px;
+  background-color: #ccc;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.slider::before {
+  content: "";
+  display: block;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  background-color: #111;
+}
+/*# sourceMappingURL=switch__checkbox.css.map */
